@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "An Empty Place",
+  "version": "0.001",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["index.js"]
+    }
+  ]
+}
