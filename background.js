@@ -1,5 +1,3 @@
-console.log("I hope this works");
-
 const tabChanged = (id) => {
   chrome.tabs.sendMessage(id, true)
 }
