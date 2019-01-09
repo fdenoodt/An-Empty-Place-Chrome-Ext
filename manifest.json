@@ -9,5 +9,11 @@
       ],
       "js": ["index.js"]
     }
-  ]
+  ],
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
 }

@@ -1,5 +1,5 @@
 const lsHiddenItems = [];
-const lsKeysPressed = [];
+let lsKeysPressed = [];
 
 const onHandleClick = (theEvent) => {
   if (lsKeysPressed.includes(16)) {
@@ -31,3 +31,12 @@ window.onkeyup = function (e) {
 }
 
 document.addEventListener('click', onHandleClick)
+
+
+chrome.runtime.onMessage.addListener(
+  function (message, sender, sendResponse) {
+    console.log(lsKeysPressed);
+    lsKeysPressed = [];
+    console.log(lsKeysPressed);
+    
+  });
